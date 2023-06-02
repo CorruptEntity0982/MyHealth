@@ -104,7 +104,9 @@ class _MainScreenState extends State<MainScreen> {
                   child: ReusableCard(
                     rang: Colors.deepPurple,
                     cardChild: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/profile');
+                      },
                       child: Container(
                         height: 200,
                         decoration: BoxDecoration(

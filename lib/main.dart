@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'InputPage.dart';
 import 'SecondScreen.dart';
 import 'mainScreen.dart';
+import 'profile.dart';
 
 void main() {
   runApp(
@@ -31,6 +32,7 @@ class Myhealth extends StatelessWidget {
           '/first': (context) => const InputPage(),
           '/second': (context) => const SecondScreen(),
           '/main': (context) => const MainScreen(),
+          '/profile': (context) => const Profile(),
         });
   }
 }
