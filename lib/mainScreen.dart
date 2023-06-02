@@ -24,7 +24,7 @@ class _MainScreenState extends State<MainScreen> {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 35,
-                    color: Colors.black,
+                    color: Colors.deepPurple,
                   ),
                 ),
                 const SizedBox(width: 160),
@@ -60,7 +60,9 @@ class _MainScreenState extends State<MainScreen> {
                   child: ReusableCard(
                     rang: Colors.deepPurple,
                     cardChild: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/history');
+                      },
                       child: Container(
                         height: 200,
                         decoration: BoxDecoration(
@@ -156,7 +158,9 @@ class _MainScreenState extends State<MainScreen> {
                   child: ReusableCard(
                     rang: Colors.deepPurple,
                     cardChild: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/cibil');
+                      },
                       child: Container(
                         height: 200,
                         decoration: BoxDecoration(
@@ -175,7 +179,7 @@ class _MainScreenState extends State<MainScreen> {
                             ),
                             const SizedBox(height: 15),
                             const Text(
-                              'CIBIL',
+                              'Finance',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
@@ -183,7 +187,7 @@ class _MainScreenState extends State<MainScreen> {
                             ),
                             const SizedBox(height: 10),
                             const Text(
-                              'View Your current CIBIL Score',
+                              'Check availablility for financial aid',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 15,
@@ -200,7 +204,9 @@ class _MainScreenState extends State<MainScreen> {
                   child: ReusableCard(
                     rang: Colors.deepPurple,
                     cardChild: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/bills');
+                      },
                       child: Container(
                         height: 200,
                         decoration: BoxDecoration(
@@ -250,7 +256,9 @@ class _MainScreenState extends State<MainScreen> {
                   child: ReusableCard(
                     rang: Colors.deepPurple,
                     cardChild: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/doctor');
+                      },
                       child: Container(
                         height: 200,
                         decoration: BoxDecoration(
@@ -294,7 +302,9 @@ class _MainScreenState extends State<MainScreen> {
                   child: ReusableCard(
                     rang: Colors.deepPurple,
                     cardChild: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/vaccine');
+                      },
                       child: Container(
                         height: 200,
                         decoration: BoxDecoration(

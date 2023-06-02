@@ -3,6 +3,11 @@ import 'InputPage.dart';
 import 'SecondScreen.dart';
 import 'mainScreen.dart';
 import 'profile.dart';
+import 'medical_history.dart';
+import 'cibil.dart';
+import 'bills.dart';
+import 'doctor.dart';
+import 'vaccine.dart';
 
 void main() {
   runApp(
@@ -33,6 +38,11 @@ class Myhealth extends StatelessWidget {
           '/second': (context) => const SecondScreen(),
           '/main': (context) => const MainScreen(),
           '/profile': (context) => const Profile(),
+          '/history': (context) => const History(),
+          '/cibil': (context) => const Cibil(),
+          '/bills': (context) => const Bills(),
+          '/doctor': (context) => const Doctor(),
+          '/vaccine': (context) => const Vaccine(),
         });
   }
 }
